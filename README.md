@@ -31,9 +31,9 @@ npm install
 ## 5/ Run tests
 
 ```
-BROWSER=firefox ./node_modules/.bin/parallel-mocha *-specs.js
-BROWSER=internet_explorer ./node_modules/.bin/parallel-mocha *-specs.js
-BROWSER=chrome ./node_modules/.bin/parallel-mocha *-specs.js
+BROWSER=firefox ./node_modules/.bin/parallel-mocha tests/*-specs.js
+BROWSER=internet_explorer ./node_modules/.bin/parallel-mocha tests/*-specs.js
+BROWSER=chrome ./node_modules/.bin/parallel-mocha tests/*-specs.js
 ```
 
 Go [here](https://saucelabs.com/tests) to view the tests.
