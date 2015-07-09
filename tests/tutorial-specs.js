@@ -9,7 +9,7 @@ chai.should();
 chaiAsPromised.transferPromiseness = wd.transferPromiseness;
 
 // browser capabilities
-var DESIREDS = require('./desireds');
+var DESIREDS = require('../desireds');
 
 // http configuration, not needed for simple runs
 wd.configureHttp( {
