@@ -1,5 +1,5 @@
 test_in_parallel:
-	make -j test_firefox test_chrome test_ie
+	make -j test_firefox test_chrome test_internet_explorer
 
 test_firefox:
 	BROWSER=firefox ./node_modules/.bin/parallel-mocha tests/*-specs.js
