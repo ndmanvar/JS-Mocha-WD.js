@@ -4,13 +4,16 @@
   "description": "Parallel tests with Mocha and WD.js  =============",
   "main": "",
   "devDependencies": {
-    "wd": "~0.2.8",
+    "chai": "~1.8.1",
     "chai-as-promised": "~4.1.0",
     "colors": "~0.6.2",
-    "q": "~0.9.7",
+    "grunt": "^0.4.5",
+    "grunt-parallel": "^0.4.1",
+    "grunt-shell": "^1.1.2",
     "lodash": "~2.4.1",
-    "chai": "~1.8.1",
+    "mocha": "~2.2.5",
     "parallel-mocha": "~0.0.7",
-    "mocha": "~2.2.5"
+    "q": "~0.9.7",
+    "wd": "~0.2.8"
   }
 }

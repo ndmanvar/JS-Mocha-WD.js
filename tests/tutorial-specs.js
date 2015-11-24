@@ -61,36 +61,22 @@ describe('   mocha spec examples (' + desired.browserName + ')', function() {
 
   it("should get home page", function(done) {
     browser
-      .get("http://nodejs.org/")
+      .get("https://saucelabs.com/test/guinea-pig")
       .title()
-      .should.become("Node.js")
-      .elementById("intro")
-      .text()
-      .should.eventually.include('JavaScript runtime')
+      .should.become("I am a page title - Sauce Labs")
       .nodeify(done);
   });
 
 
   it("should go to the doc page1", function(done) {
     browser
-      .get("http://nodejs.org/")
-      .elementById('docsbutton')
+      .get("https://saucelabs.com/test/guinea-pig")
+      .elementById('i am a link')
       .click()
-      .waitForElementByCss("#content header", wd.asserters.textInclude('Manual'), 10000)
+      .waitForElementById("i_am_an_id", 10000)
       .title()
-      .should.eventually.include("Manual")
+      .should.eventually.include("another")
       .nodeify(done);
-  });
-
-  it("should return to the home page 2", function(done) {
-    browser
-      .get("http://nodejs.org/")
-      .elementById('logo')
-      .click()
-      .waitForElementById("intro", wd.asserters.textInclude('JavaScript runtime'), 10000)
-      .title()
-      .should.not.eventually.include("Manual")
-              .nodeify(done);
   });
 });
 
